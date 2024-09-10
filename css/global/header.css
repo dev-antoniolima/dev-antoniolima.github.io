@@ -40,7 +40,15 @@
   }
   
   @media (max-width: 800px) {
+
+    .container.header {
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+
     .header-menu {
+      display: none;
       gap: 20px;
     }
     .header-menu a {

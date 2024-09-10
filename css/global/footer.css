@@ -80,27 +80,26 @@
     color: #000000;
 }
 
-.footer-copy {
-    grid-column: 1/-1;
-    margin-top: 40px;
-}
 
 @media (max-width: 800px) {
     .footer > img {
     }
 
     .footer {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    .footer {
-        grid-template-columns: 1fr;
-        gap: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
     }
 
-    .footer-copy{
-        margin-top: 0px;
+    .footer-contato {
+        margin: 0 auto ;
+    }
+
+    .footer iframe {
+        width: 250px;
+        height: 250px;
     }
 }
