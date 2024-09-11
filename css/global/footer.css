@@ -1,7 +1,6 @@
 .footer-bg {
-    background-color: #024c97;
+    background: linear-gradient(#024c97, #0d82a3);
 }
-
 .footer {
     display: grid;
     grid-template-columns: 3fr 5fr 4fr;
