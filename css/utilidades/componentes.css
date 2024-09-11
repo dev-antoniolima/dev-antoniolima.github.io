@@ -84,15 +84,13 @@
     font-weight: 400;
     text-transform: lowercase;
   }
-}
 
-
-@media (max-width: 400px) {
-  .bicicleta-informacoes {
-    grid-template-columns: 1fr;
+  .container.header img {
+    width: 100px;
+    height: 80px;
   }
 
-  .bicicleta-comprar {
-    grid-template-columns: 1fr;
+  .container.container.header img.fen {
+    width: 250px;
   }
 }
