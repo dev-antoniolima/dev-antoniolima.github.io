@@ -71,12 +71,13 @@
 .rights {
     display: block;
     text-align: center;
-    background-color: #ffffff;
+    background: #0d82a3;
+    border: solid #00000053;
 }
 
 .rights p {
     text-transform: uppercase;
-    color: #000000;
+    color: #ffffff;
 }
 
 
