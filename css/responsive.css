@@ -1,0 +1,40 @@
+@media(max-width: 800px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header-logo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-logo img {
+        align-self: center;
+    }
+
+    .header-logo {
+        font-size: 12px;
+    }
+
+    .contato-formulario form {
+       
+        grid-template-columns: 1fr;
+    }
+
+    .contato-formulario {
+        margin: 10px 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .form {
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+    
+
+}
