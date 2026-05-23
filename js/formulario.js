@@ -8,6 +8,40 @@ nome.addEventListener("keypress", function(e) {
   }
 });
 
+// Resultados complete
+const dados = ["DESMA", "CARTO", "DCCT", "SECFEN", "DIREÇÃO", "ELE", "DETEL", "ESTR"];
+
+const input = document.getElementById("meuInput");
+const lista = document.getElementById("listaSugestoes");
+
+input.addEventListener("input", function() {
+  const valorDigitado = this.value.toLowerCase();
+  lista.innerHTML = ""; // Limpa a lista anterior
+
+  // Se o usuário não digitou nada, encerra
+  if (!valorDigitado) return;
+
+  // Filtra os dados que começam com o texto digitado
+  const sugestoes = dados.filter(item => 
+    item.toLowerCase().startsWith(valorDigitado)
+  );
+
+  // Cria os elementos <li> e adiciona na lista
+  sugestoes.forEach(item => {
+    const itemLista = document.createElement("li");
+    itemLista.textContent = item;
+    
+    // Permite que o usuário clique na sugestão
+    itemLista.addEventListener("click", function() {
+      input.value = item;
+      lista.innerHTML = ""; // Limpa as sugestões após a seleção
+    });
+
+    lista.appendChild(itemLista);
+  });
+});
+
+
 
 // VALIDAÇÃO CAMPO TELEFONE //
 const handlePhone = (event) => {
