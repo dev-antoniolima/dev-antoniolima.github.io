@@ -9,7 +9,7 @@ nome.addEventListener("keypress", function(e) {
 });
 
 // Resultados complete
-const dados = ["DESMA", "CARTO", "DCCT", "SECFEN", "DIREÇÃO", "ELE", "DETEL", "ESTR"];
+const dados = ["CARTO", "DDCT", "DESC", "DESMA", "DETEL", "DIREÇÃO", "ELE", "ESTR", "MECAN", "PEAMB", "PGECIV", "SECFEN", "SIDES", "PROTOCOLO"];
 
 const input = document.getElementById("meuInput");
 const lista = document.getElementById("listaSugestoes");
