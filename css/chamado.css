@@ -34,9 +34,49 @@ textarea {
 .contato-formulario form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
 }
 
+.autocomplete-container {
+  position: relative;
+  width: auto;
+  font-family: sans-serif;
+}
+
+#meuInput {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.lista {
+  position: absolute;
+  width: max-content;
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 150px;
+  border-radius: 10px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 10;
+}
+
+.lista li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.lista li:hover {
+  background-color: #f0f0f0;
+}
+
+.lista li ul {
+    display: flex;
+    width: auto;
+}
 
 
 .contato-formulario input[type="text"],

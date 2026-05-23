@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/chamado.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.10/dist/css/autoComplete.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.10/dist/autoComplete.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>SAU | CHAMADO</title>
 </head>
@@ -68,7 +71,8 @@
                     <br>
                     <div>
                         <label for="departamento">Departamento</label>
-                        <input type="text" id="departamento" name="departamento" required>
+                        <input type="text" id="meuInput" name="departamento" required>
+                        <ul id="listaSugestoes" class="lista"></ul>
                     </div>
 
 
